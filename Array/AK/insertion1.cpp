@@ -92,6 +92,7 @@ using namespace std;
 
 
 
+
 int main(){
     int n;
     cin>>n;
@@ -107,13 +108,13 @@ int main(){
 
     // insertAtEnd(arr, n);
 
-    // insertAtAny(arr, n);
+    insertAtAny(arr, n);
 
     //sorting 
 
-    // bubbleSort(arr, n);
+    bubbleSort(arr, n);
 
-    // selectionSort(arr, n);
+    selectionSort(arr, n);
 
     insertionSort(arr, n);
 
