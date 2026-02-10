@@ -27,6 +27,19 @@ using namespace std;
     }
  }
 
+ void insertAtAny(int arr[], int size){
+    int pos=3;
+    for(int i=size-1; i>=pos;i--){
+        arr[i+1]=arr[i];
+    }
+    size++;
+    arr[pos]=33;
+
+    for(int i=0;i<size;i++){
+        cout<<arr[i]<<" ";
+    }
+ }
+
 int main(){
     int n;
     cin>>n;
@@ -38,10 +51,16 @@ int main(){
     // for(int i=0;i<n;i++){
     //     cout<<arr[i];
     // }
-    insertbeg(arr, n);
+    // insertbeg(arr, n);
 
-    insertAtEnd(arr, n);
+    // insertAtEnd(arr, n);
+
+    // insertAtAny(arr, n);
+
     
+    
+
+    // mera bhi hogya mai ati washroom jari vc cut krti tbtk
     
 }
 
