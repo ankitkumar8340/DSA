@@ -19,6 +19,14 @@ using namespace std;
 
  }
 
+ void insertAtEnd(int arr[], int size){
+    arr[size]=11;
+    size++;
+    for(int i=0;i<size;i++){
+        cout<<arr[i]<<" ";
+    }
+ }
+// ruko na test kr rhi kuchh  haa hogya  kaha   kuchh nhi 
 int main(){
     int n;
     cin>>n;
@@ -31,6 +39,8 @@ int main(){
     //     cout<<arr[i];
     // }
     insertbeg(arr, n);
+
+    insertAtEnd(arr, n);
     
     
 }
