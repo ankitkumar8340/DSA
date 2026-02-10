@@ -26,7 +26,7 @@ using namespace std;
         cout<<arr[i]<<" ";
     }
  }
-// ruko na test kr rhi kuchh  haa hogya  kaha   kuchh nhi 
+
 int main(){
     int n;
     cin>>n;
