@@ -17,6 +17,7 @@ void oneTimeRotate(int arr[], int n){
     }
 }
 
+
 void multipleTimeRotate(int arr[], int n){
     for(int j=0; j<3;j++){
         int temp = arr[0];
