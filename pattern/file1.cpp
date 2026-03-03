@@ -154,8 +154,67 @@ void print7(int n){
     }
 }
 
+void print8(int n){
+
+    /*
+         012345678
+     0   *********         [0, 9, 0]
+     1    *******          [1, 7, 1] 
+     2     *****           [2, 5, 2]
+     3      ***            [3, 3, 3]
+     4       *             [4, 1, 4]
+
+     i = 0  space = 0
+     i= 1 space = 1 , 1   so  space = i
+     for star (2*(n-i))-1 
+     like i = 0 => (2*(5-0))-1 = 9
+     like i = 1 => (2*(5-1))-1 = 7
+     like i = 2 => (2*(5-2))-1 = 5
+    */
+   for(int i=0;i<n;i++){
+    for(int j=0;j<i;j++){
+        cout<<" ";
+    }
+    for(int j=0;j<(2*(n-i))-1; j++){
+        cout<<"*";
+    }
+    for(int j=0;j<i;j++){
+        cout<<" ";
+    }
+    cout<<endl;
+   }
+
+}
+
+void print9(int n){
+    /*
+             012345678
+    0            *                  [4, 1, 4]
+    1           ***                 [3, 3, 3]
+    2          *****                [2, 5, 2]
+    3         *******               [1, 7, 1]
+    4        *********              [0, 9, 0]
+    5        *********
+    6         *******
+    7          *****
+    8           *** 
+    9            * 
+    
+    for upper - {
+        space = (n-1/2)-i-1
+        star= 2*i+1 
+
+    }
+
+   
 
 
+    */
+}
+
+void print10(int n){
+
+}
 int main(){
 
    int n;
@@ -166,7 +225,10 @@ int main(){
 //    print4(n);
     // print5(n);
     // print6(n);
-    print7(n);
+    // print7(n);
+    // print8(n);
+    // print9(n);
+    print10(n);
    
 
 
