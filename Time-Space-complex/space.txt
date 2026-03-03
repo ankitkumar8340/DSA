@@ -1,0 +1,39 @@
+
+space complexity -->> memory space, big oh notation
+
+auxiliary space  --> space that you take to solve the problem   
+
+input space --> the space that you take to solve the input    
+
+int a, b
+
+int c = a+b
+
+//where c is auxiliary space c
+//where a, b is input space 
+
+and combine it is known as space complexity
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

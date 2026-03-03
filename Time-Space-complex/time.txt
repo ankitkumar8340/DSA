@@ -1,0 +1,94 @@
+what is time complexity?
+ans-> ==>>>  tc != time taken to run on a particular machine, the rate of which
+the time taken increases with respect to input size
+
+
+tc ->   big-Oh notation   --> o( {time-taken})
+
+    like example
+    for(int i=1; i<=4; i++){   changed 4->n
+        cout<<"ship";
+    }
+
+    ** tc 
+    --> wrost case scenerio
+    --> avoid constant
+    ---> avoid lower values
+ 
+    o(12)  //but we can't write in constant
+
+    changed 4->n
+
+    for(int i=1; i<=n; i++){   changed 4->n
+        cout<<"ship";
+    }
+ 
+    o(n * 3)   //for every iteration three things is happeing increment checking condtion and printing
+
+
+    time-complexity can be measure in three scenerio 
+    1.best-case  omega(_-_)
+    2.average-case   thetha(0)
+    3.wrost-case  -->>>  bih-Oh (O)  (upper bound)
+
+
+    example 1 :--- 
+
+    for(int i=0;i<n ;i++){
+        for(int j=0;j<n;j++){
+            --------
+        }
+    }
+
+    O(n * n * 3 )
+
+    //we left the constant O(n*n)
+
+    example 2 :-----
+    for(int i=0;i<n;i++){
+        for(int j=0;j<=i;j++){
+            -------
+        }
+    }
+
+   n= 1 -- 1
+    2 -- 2
+    3 -- 3
+    n= n
+
+    // sum of == (1 +2 +3 ....  n)
+    => n*(n+1)/ 2    n^2/2 + n/2   => O(n^2/2)  => O(n^2)
+
+
+
+
+
+
+
+
+
+
+
+         
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
