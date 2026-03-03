@@ -88,8 +88,73 @@ void print4(int n){
 }
 
 void print5(int n){
-    
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<n-i+1;j++){
+            cout<<j<<" ";
+        }
+        cout<<endl;
+    }
 }
+
+void print6(int n){
+    
+    /*
+       **
+      **
+     **
+    **
+   **
+  **
+ **
+    */
+    for(int i=0;i<=n;i++){
+        for(int j=0;j<n-i+1;j++){
+            cout<<" ";
+        }
+        for(int j; j<2*i+1;j++){
+            cout<<"*";
+        }
+        for(int j;j<n-i+1;j++){
+            cout<<" ";
+        }
+        cout<<endl;
+    }
+
+}
+
+void print7(int n){
+/*
+          0 1 2 3 4
+       0      *                 [2, 1, 2]   2*i+1 = stars
+       1    * * *               [1, 3, 1]
+       2  * * * * *             [0, 5, 0]
+ 
+       0 --> 2 space star  2 space
+       1 --> 1 space star  1 space
+       2 --> no space star
+
+       for printing space n= 3 (n-row-1) = space before and after
+       for printing star 2*i+1 =>i =0 =>  0+1 = 1 star
+       for printing star 2* i+1 => i=2 => 2*2+1 = 5 stars
+
+
+    */
+
+    for(int i=0;i<=n;i++){
+        for(int j=0;j<n-i+1;j++){
+            cout<<" ";
+        }
+        for(int j=0; j<2*i+1;j++){
+            cout<<"*";
+        }
+        for(int j=0;j<n-i+1;j++){
+            cout<<" ";
+        }
+        cout<<endl;
+    }
+}
+
+
 
 int main(){
 
@@ -99,7 +164,9 @@ int main(){
 //    print2(n);
 //    print3(n);
 //    print4(n);
-    print5(n)
+    // print5(n);
+    // print6(n);
+    print7(n);
    
 
 
