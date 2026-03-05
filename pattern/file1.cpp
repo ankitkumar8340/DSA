@@ -289,7 +289,61 @@ for(int i=0;i<n;i++){
 
 }
 
+void print12(int n){
+    /*
+        01234567
+    0   1      1            [1, 6, 1]
+    1   12    21            [2, 4, 2]
+    2   123  321            [3, 2, 3]
+    3   12344321            [4, 0, 4]
 
+    n=4
+    letter= i+1
+
+   first number of space the reduce by 2 =>  2 (n-1)  
+
+
+    */
+
+    int space = 2*(n-1);
+    for(int i=0;i<n;i++){
+        for(int j=0;j<=i;j++){
+            cout<<j+1;
+        }
+
+        for(int j=0;j<space; j++){
+            cout<<" ";
+        }
+
+        for(int j=i;j>=0;j--){
+            cout<<j+1;
+        }
+        space -=2;
+        cout<<endl;
+    }
+
+}
+
+void print13(int n){
+    /*
+    1
+    2 3
+    4 5 6
+    7 8 9 10
+    11 12 13 14 15
+    
+    */
+   int start=1;
+   for(int i=0;i<n;i++){
+    for(int j=0;j<=i;j++){
+        cout<<start<<" ";
+        start +=1;
+    }
+    cout<<endl;
+   }
+
+
+}
 
 
 
@@ -309,7 +363,9 @@ int main(){
     // print8(n);
     // print9(n);
     // print10(n);
-    print11(n);
+    // print11(n);
+    // print12(n);
+    print13(n);
 
    
 
