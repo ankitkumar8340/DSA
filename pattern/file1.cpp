@@ -341,11 +341,11 @@ void print13(int n){
     }
     cout<<endl;
    }
-
-
 }
 
-
+void print14(int n){
+    
+}
 
 
 
@@ -365,7 +365,8 @@ int main(){
     // print10(n);
     // print11(n);
     // print12(n);
-    print13(n);
+    // print13(n);
+    print14(n);
 
    
 
