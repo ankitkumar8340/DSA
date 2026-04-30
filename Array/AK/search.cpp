@@ -24,8 +24,19 @@ struct Work{
         return low;
     }
 
+    int BinarySearch(int arr[], int target, int size){
+        int left =0, right=size-1;
 
+        while(left<=right){
+            int mid = left+(right-left)/2;
+            if(arr[mid]==target) return mid;
+            else if(arr[mid]<target) left=mid+1;
+            else right= mid-1;
+        }
 
+        return -1;
+    }
+ 
 };
 
 int main(){
@@ -36,7 +47,11 @@ int main(){
         cin>>arr[i];
     }
     Work w;
-    cout<<w.HighSearch(arr, size);
-    cout<<w.LowSearch(arr);
+    // cout<<w.HighSearch(arr, size);
+    // cout<<w.LowSearch(arr);
+
+    int target;
+    cin>>target;
+    cout<<w.BinarySearch(arr, target, size);
 
 }
